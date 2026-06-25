@@ -94,7 +94,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ##  Author
 
-**Your Name**  
+**AAKANKSHA EKKA**  
 [GitHub](https://github.com/AAKANKSHAEKKA) · [LinkedIn](https://linkedin.com/in/aakanksha-ekka-3b1166329/)
 
 
