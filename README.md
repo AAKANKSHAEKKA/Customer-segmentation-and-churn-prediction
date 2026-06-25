@@ -1,4 +1,4 @@
-# 📊 Customer Segmentation & Churn Prediction
+#  Customer Segmentation & Churn Prediction
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3-orange?logo=scikit-learn)
@@ -9,7 +9,7 @@ A complete end-to-end machine learning project that segments customers using uns
 
 ---
 
-## 🎯 Project Goals
+## Project Goals
 
 - **Segment** customers into meaningful groups using K-Means & RFM analysis
 - **Predict** which customers are likely to churn (Random Forest + XGBoost)
@@ -18,66 +18,7 @@ A complete end-to-end machine learning project that segments customers using uns
 
 ---
 
-## 🗂️ Project Structure
 
-```
-customer-churn-project/
-├── data/
-│   ├── raw/                  # Original datasets (not tracked by Git)
-│   └── processed/            # Cleaned & feature-engineered data
-├── notebooks/
-│   ├── 01_EDA.ipynb          # Exploratory Data Analysis
-│   ├── 02_Segmentation.ipynb # Customer Segmentation (RFM + K-Means)
-│   └── 03_Churn_Model.ipynb  # Churn Prediction & Evaluation
-├── src/
-│   ├── __init__.py
-│   ├── data_preprocessing.py # Cleaning & feature engineering
-│   ├── segmentation.py       # RFM + clustering logic
-│   ├── churn_model.py        # Model training & prediction
-│   └── visualizations.py     # Plotting utilities
-├── models/                   # Saved model files (.pkl)
-├── reports/
-│   └── figures/              # Output plots & charts
-├── tests/
-│   └── test_pipeline.py      # Unit tests
-├── requirements.txt
-├── config.yaml
-└── main.py                   # Run full pipeline
-```
-
----
-
-## 🚀 Quick Start
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/YOUR_USERNAME/customer-churn-project.git
-cd customer-churn-project
-```
-
-### 2. Create a virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate        # Linux/Mac
-venv\Scripts\activate           # Windows
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the full pipeline
-```bash
-python main.py
-```
-
-Or explore step by step in Jupyter:
-```bash
-jupyter notebook notebooks/
-```
-
----
 
 ## 📦 Dataset
 
@@ -145,17 +86,15 @@ pytest tests/
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-## 🙋 Author
+##  Author
 
 **Your Name**  
-[GitHub](https://github.com/YOUR_USERNAME) · [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+[GitHub](https://github.com/AAKANKSHAEKKA) · [LinkedIn](https://linkedin.com/in/aakanksha-ekka-3b1166329/)
 
----
 
-> ⭐ If you find this project useful, please consider giving it a star!
