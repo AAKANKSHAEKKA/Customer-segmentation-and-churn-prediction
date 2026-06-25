@@ -34,10 +34,10 @@ cd customer-segmentation-churn-prediction
 pip install -r requirements.txt
 
 3. Get the dataset
-The raw dataset isn't included in this repo. Download Telco_customer_churn.xlsx from the Kaggle IBM Telco Customer Churn page and place it in the project root (same folder as the notebook).
+The raw dataset isn't included in this repo. Download (Telco_customer_churn.xlsx) from the Kaggle IBM Telco Customer Churn page and place it in the project root (same folder as the notebook).
 
 4. Run the notebook
-jupyter notebook Customer_Segmentation_Churn_Prediction.ipynb
+jupyter notebook Customer_seg_and_Churn_predict.ipynb
 
 ##  Approach
 
