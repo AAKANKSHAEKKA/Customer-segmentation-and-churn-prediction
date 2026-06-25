@@ -18,9 +18,45 @@ A complete end-to-end machine learning project that segments customers using uns
 
 ---
 
+##  Project Structure
+.
+├── Customer_seg_and_Churn_predict.ipynb   # Main analysis notebook
+├── requirements.txt
+├── LICENSE
+└── README.md
+
+##  Getting Started
+1. Clone the repo
+git clone https://github.com/<your-username>/customer-segmentation-churn-prediction.git
+cd customer-segmentation-churn-prediction
+
+2. Install dependencies
+pip install -r requirements.txt
+
+3. Get the dataset
+The raw dataset isn't included in this repo. Download Telco_customer_churn.xlsx from the Kaggle IBM Telco Customer Churn page and place it in the project root (same folder as the notebook).
+
+4. Run the notebook
+jupyter notebook Customer_Segmentation_Churn_Prediction.ipynb
+
+##  Approach
+
+Data Cleaning
+
+Converted Total Charges from text to numeric (blank values correspond to brand-new customers with 0 tenure).
+Dropped identifier and geographic columns (CustomerID, Zip Code, Lat Long, etc.) that add no general predictive value.
+Dropped Churn Score and Churn Reason to avoid target leakage — these are only known after a customer has already churned or are IBM's own pre-computed risk score.
+
+Segmentation (Unsupervised)
+
+Customers are segmented using an RFM-inspired feature set adapted for a subscription business: Tenure Months, Monthly Charges, Total Charges, and CLTV. Features are standardized and clustered with K-Means; the number of clusters (k=4) is chosen using the elbow method and silhouette score.
+
+Churn Prediction (Supervised)
+
+Three classifiers — Logistic Regression, Random Forest, and XGBoost — are trained on a stratified 80/20 split, with class imbalance handled via class_weight="balanced" / scale_pos_weight. Models are compared on Accuracy, Precision, Recall, F1, and ROC-AUC, with recall on the churned class weighted most heavily (missing an at-risk customer is costlier than a false alarm).
 
 
-## 📦 Dataset
+##  Dataset
 
 This project uses the **[Telco Customer Churn dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)** from Kaggle.
 
